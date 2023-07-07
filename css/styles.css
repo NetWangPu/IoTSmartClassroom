@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  position: relative; /* 用于定位开关灯按钮 */
+  overflow: hidden; /* 用于隐藏滚动条 */
+  background-position: center; /* 用于居中 */
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(12, 99, 199, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#led1-on {
+  background-color: #4caf50;
+  color: #fff;
+}
+#led1-off {
+  background-color: #f44336;
+  color: #fff;
+}
+#led2-on {
+  background-color: #4caf50;
+  color: #fff;
+}
+#led2-off {
+  background-color: #f44336;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  color: #000107;
+}
+
+/* LED开关状态 */
+.led-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.led-status {
+  text-align: center;
+}
+
+.led-indicator {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.on {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.off {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* 环境监测 */
+.environment {
+  margin-top: 30px;
+}
+
+.sensor {
+  display: flex;
+  align-items: center;
+}
+
+.sensor-label {
+  font-weight: bold;
+}
+
+.sensor-value {
+  margin-left: 5px;
+}
+
+/* 人体感应 */
+.presence {
+  margin-top: 30px;
+}
+
+.presence-status {
+  padding: 10px;
+  background-color: #e0e0ff;
+  color: #000099;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 风扇控制 */
+.fan-control {
+  margin-top: 30px;
+}
+
+.mode {
+  margin-bottom: 10px;
+}
+
+.threshold {
+  margin-bottom: 10px;
+}
+
+.fan-status {
+  margin-bottom: 10px;
+}
+
+.fan-toggle {
+  text-align: center;
+}
+
+/* 开关灯 */
+.light-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.light-switch label {
+  margin-left: 5px;
+}
+
+.light-switch input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.content {
+  width: 20%;
+  /* 显示在最左侧 */
+  margin: 0;
+  padding: 0px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 放到右下角*/
+.log{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 50%;
+  background-color: rgba(44, 141, 92, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* 圆角 */
+  border-radius: 10px 0 0 0;
+}
+.log-content{
+    /* 可以滚动 */
+    overflow-y: scroll;
+    /* 滚动条样式 */
+    scrollbar-width: thin;
+    /*显示最新的日志*/
+    scroll-behavior: smooth;
+    height: 80%;
+    /* 靠下 */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* 背景色 */
+    background-color: rgba(202, 202, 202, 0.9);
+    /* 阴影 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* 圆角 */
+    border-radius: 10px 0 0 0;
+    /* 内边距 */
+    padding: 10px;
+
+}
+
+/* 将图片容器居中 */
+.imgcontainer {
+  /* 元素横向显示 */
+  display: flex;
+  /* 横向居中 */
+  justify-content: center;
+  /* 纵向居中 */
+  align-items: center;
+  /* 背景色 */
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 600px;
+  height: 250px;
+  /* 左边距 */
+  margin-left: 20%;
+  /* 上边距 */
+  margin-top: 5%;
+
+}
+
+/* 图片样式 */
+.image img{
+  /*图片保持原始比例高宽拉伸*/
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  /* 图片居中 */
+  text-align: center;
+  /* 图片边框 */
+  border: 1px solid #ddd;
+  /* 图片边框圆角 */
+  border-radius: 4px;
+  /* 图片边框阴影 */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 文字说明样式 */
+.caption {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+

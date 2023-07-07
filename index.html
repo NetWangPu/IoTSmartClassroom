@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>智慧教室</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>物联智慧教室</h1>
+      <h2>灯光控制</h2>
+      <div class="led-control">
+              <!-- 两个按钮控制两个灯 -->
+        <button id="led1-on">开启LED1</button>
+        <button id="led1-off">关闭LED1</button>
+
+      </div>
+
+
+
+      <div class="environment">
+        <h2>环境监测</h2>
+        <div class="sensor">
+          <span class="sensor-label">温度：</span>
+          <span class="sensor-value" id="temperature-value">25°C</span>
+        </div>
+        <div class="sensor">
+          <span class="sensor-label">湿度：</span>
+          <span class="sensor-value" id="humidity-value">50%</span>
+        </div>
+        <div class="sensor">
+          <span class="sensor-label">空气质量：</span>
+          <span class="sensor-value" id="air-quality-value">优</span>
+        </div>
+        <div class="sensor">
+          <span class="sensor-label">光照强度：</span>
+          <span class="sensor-value" id="light-intensity-value">1000 lux</span>
+        </div>
+        <div class="sensor">
+          <span class="sensor-label">气压：</span>
+          <span class="sensor-value" id="air-pressure-value">101.3 kPa</span>
+        </div>
+      </div>
+
+      <div class="presence">
+        <h2>人体检测</h2>
+        <div class="presence-status" id="ishavePeople">有人</div>
+      </div>
+
+      <div class="fan-control">
+        <h2>风扇控制</h2>
+        <div class="mode">
+          <input type="radio" name="mode" id="auto-mode" >
+          <label for="auto-mode">自动模式</label>
+          <input type="radio" name="mode" id="manual-mode" checked>
+          <label for="manual-mode">手动模式</label>
+        </div>
+        <div class="threshold">
+          <div>*[手动模式下直接控制 自动模式下根据阈值控制温度大于设定阈值打开风扇]</div>
+          <label for="threshold-input">自动模式阈值：</label>
+          <input type="number" id="threshold-input" min="0" value="30" max="100">
+        </div>
+        <div class="fan-status" id="fan-status">风扇状态：关闭</div>
+        <div class="fan-toggle">
+          <button id="fan-on-button">开启风扇</button>
+          <button id="fan-off-button">关闭风扇</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="light-switch">
+      <label for="switch-input">开关灯</label>
+      <input type="checkbox" id="switch-input">
+    </div>
+  </div>
+  <div class="sidebar">
+
+    <div class="imgcontainer">
+      <div class="image">
+        <img src="./images/LED-off.png" alt="图片1">
+        <div class="caption">教室前侧灯光</div>
+      </div>
+      <div class="image">
+        <img src="./images/LED-off.png" alt="图片2">
+        <div class="caption">教室后侧灯光</div>
+      </div>
+      <div class="image">
+        <img src="./images/fan-on.png" alt="图片3">
+        <div class="caption">教室内风扇</div>
+      </div>
+    </div>
+
+    <!-- 消息日志 -->
+    <div class="log">
+      <h2>系统消息日志</h2>
+      <div class="log-content">
+        
+      </div>
+    </div>
+
+  </div>
+
+  <script  src="js/jquery-1.11.0.min.js"></script>
+  <script  src="js/highcharts.js"></script>
+  <script  src="js/WSN/WSNRTConnect.js"></script>
+  <script  src="js/script.js"></script>
+</body>
+
+</html>

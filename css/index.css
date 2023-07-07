@@ -1,0 +1,48 @@
+/* * { */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* box-sizing: border-box; */
+/* } */
+
+/* body { */
+    /* background-image: url("/images/background.jpg"); */
+    /* /~根据图片高度适应屏幕~/ */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* font-family: "Microsoft YaHei"; */
+  /* } */
+/*  */
+/* /~ 页头 ~/ */
+/* .header { */
+    /* height: 80px; */
+    /* width: 100%; */
+    /* background: rgb(130, 153, 148); */
+    /* /~ color: #fff; ~/ */
+    /* font-size: 12px; */
+    /* /~ 顶部显示 ~/ */
+/* } */
+/* /~ 页中 ~/ */
+/* .main { */
+    /* width: 100%; */
+/* } */
+
+/* .main>div { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: 8vh; */
+    /* font-size: 4rem; */
+    /* color: rgb(0, 171, 238); */
+/* } */
+/* /~ 页尾 ~/ */
+/* .footer { */
+    /* width: 100vw; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* padding: 15px; */
+    /* font-size: 12px; */
+    /* background-color: #323a45; */
+    /* color: #fff; */
+    /* text-align: center; */
+/* } */
